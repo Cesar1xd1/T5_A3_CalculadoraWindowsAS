@@ -167,22 +167,44 @@ public class MainActivity extends AppCompatActivity {
     public void igual(View v){
         if(operator!=0) {
             double n1 = Double.parseDouble(buffer);
-            double n2 = Double.parseDouble(consola.getText().toString());
+            double n2 = 0.0;
+           int x = 0;
+
+            if(consola.getText().toString().equals("")){
+                x = 1;
+            }else{
+                n2 = Double.parseDouble(consola.getText().toString());
+            }
             double r = 0;
             switch (operator) {
                 case 5:
+                    if(x==1){
+                        n2 = 0;
+                    }
                     r=n1+n2;
                     break;
                 case 4:
+                    if(x==1){
+                        n2 = 0;
+                    }
                     r=n1-n2;
                     break;
                 case 3:
+                    if(x==1){
+                        n2 = 1;
+                    }
                     r=n1*n2;
                     break;
                 case 2:
+                    if(x==1){
+                        n2 = 1;
+                    }
                     r=n1/n2;
                     break;
                 case 1:
+                    if(x==1){
+                        n2 = 1;
+                    }
                     r=n1%n2;
                     break;
                 default:
