@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="igual"
+        android:text="@string/txt_btn_igual"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPunto"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="bpunto"
+        android:text="@string/txt_btn_."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnIgual" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="b0"
+        android:text="@string/txt_btn_0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMasMenos" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="bSuma"
+        android:text="@string/txt_btn_sum"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResta" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="b3"
+        android:text="@string/txt_btn_3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSum"
+        app:layout_constraintTop_toBottomOf="@+id/btn6" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:onClick="b2"
+        android:text="@string/txt_btn_2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn5" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="bResta"
+        android:text="@string/txt_btn_res"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="b6"
+        android:text="@string/txt_btn_6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnResta"
+        app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:onClick="b5"
+        android:text="@string/txt_btn_5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn4"
+        app:layout_constraintTop_toBottomOf="@+id/btn8" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="bMulti"
+        android:text="@string/txt_btn_mul"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="b9"
+        android:text="@string/txt_btn_9"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMulti"
+        app:layout_constraintTop_toBottomOf="@+id/btnRaiz" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="bDivi"
+        android:text="@string/txt_btn_div"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBorrarDel" />
+
+    <Button
+        android:id="@+id/btnRaiz"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="bRaiz"
+        android:text="@string/txt_btn_raiz"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDiv"
+        app:layout_constraintTop_toBottomOf="@+id/btnBorrarC" />
+
+    <Button
+        android:id="@+id/btnXCuadrada"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:onClick="bCuadrado"
+        android:text="@string/txt_btn_cuadrado"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn1entreX"
+        app:layout_constraintTop_toBottomOf="@+id/btnBorrarC" />
+
+    <Button
+        android:id="@+id/btnBorrarDel"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="bDel"
+        android:text="@string/txt_btn_borrar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMS" />
+
+    <Button
+        android:id="@+id/btnBorrarC"
+        android:layout_width="150dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:onClick="clear"
+        android:text="@string/txt_btn_borrarC"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnPorciento"
+        app:layout_constraintTop_toBottomOf="@+id/btnMres" />
+
+    <Button
+        android:id="@+id/btnMasMenos"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="masmenos"
+        android:text="@string/txt_btn_maso_menos"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:onClick="b1"
+        android:text="@string/txt_btn_1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:onClick="b4"
+        android:text="@string/txt_btn_4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn7" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="b7"
+        android:text="@string/txt_btn_7"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1entreX" />
+
+    <Button
+        android:id="@+id/btn1entreX"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:onClick="sobreX"
+        android:text="@string/txt_btn_1entreX"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPorciento" />
+
+    <Button
+        android:id="@+id/btnMS"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="9dp"
+        android:background="#FFFFFF"
+        android:onClick="CrearMemo"
+        android:text="@string/txt_btn_memo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consola" />
+
+    <Button
+        android:id="@+id/btnMres"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="11dp"
+        android:background="#FFFFFF"
+        android:onClick="menosMemo"
+        android:text="@string/txt_btn_memo_res"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMS"
+        app:layout_constraintTop_toBottomOf="@+id/consola" />
+
+    <Button
+        android:id="@+id/btnMC"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:background="#FFFFFF"
+        android:onClick="clearMemo"
+        android:text="@string/txt_btn_del_memo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consola" />
+
+    <Button
+        android:id="@+id/btnMsum"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="34dp"
+        android:background="#FFFFFF"
+        android:onClick="masMemo"
+        android:text="@string/txt_btn_memo_sum"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btnMR"
+        app:layout_constraintTop_toBottomOf="@+id/consola" />
+
+    <Button
+        android:id="@+id/btnMR"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="34dp"
+        android:background="#FFFFFF"
+        android:onClick="recuperarMemo"
+        android:text="@string/txt_btn_recuperar_memo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btnMC"
+        app:layout_constraintTop_toBottomOf="@+id/consola" />
+
+    <TextView
+        android:id="@+id/consola"
+        android:layout_width="386dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_consola"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="x" />
+
+    <Button
+        android:id="@+id/btnPorciento"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:onClick="bResi"
+        android:text="@string/txt_btn_porciento"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMC" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="b8"
+        android:text="@string/txt_btn_8"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn7"
+        app:layout_constraintTop_toBottomOf="@+id/btnXCuadrada" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

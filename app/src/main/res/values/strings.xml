@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CalculadoraWindows</string>
+
+    <string name="txt_btn_0">0</string>
+    <string name="txt_btn_1">1</string>
+    <string name="txt_btn_2">2</string>
+    <string name="txt_btn_3">3</string>
+    <string name="txt_btn_4">4</string>
+    <string name="txt_btn_5">5</string>
+    <string name="txt_btn_6">6</string>
+    <string name="txt_btn_7">7</string>
+    <string name="txt_btn_8">8</string>
+    <string name="txt_btn_9">9</string>
+    <string name="txt_btn_sum">+</string>
+    <string name="txt_btn_res">-</string>
+    <string name="txt_btn_mul">x</string>
+    <string name="txt_btn_div">÷</string>
+    <string name="txt_btn_.">.</string>
+    <string name="txt_btn_raiz">√</string>
+    <string name="txt_btn_cuadrado">x²</string>
+    <string name="txt_btn_1entreX">1/x</string>
+    <string name="txt_btn_borrar1">Del</string>
+    <string name="txt_btn_borrarC">C</string>
+    <string name="txt_btn_maso_menos">+/-</string>
+    <string name="txt_btn_igual">=</string>
+    <string name="txt_btn_porciento">%</string>
+
+    <string name="txt_btn_memo">MS</string>
+    <string name="txt_btn_memo_sum">M+</string>
+    <string name="txt_btn_memo_res">M-</string>
+    <string name="txt_btn_del_memo">MC</string>
+    <string name="txt_btn_recuperar_memo">MR</string>
+
+    <string name="txt_consola"></string>
+
+</resources>
